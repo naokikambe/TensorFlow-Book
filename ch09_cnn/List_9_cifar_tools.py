@@ -129,6 +129,7 @@ def show_conv_results(data, filename=None):
 
 # In[26]:
 
+W = tf.Variable(tf.random_normal([5, 5, 1, 32]))
 
 if __name__ == '__main__':
     # List 9.4
@@ -136,7 +137,6 @@ if __name__ == '__main__':
     # List 9.5
     #show_some_examples(names, data, labels)
     # List 9.7
-    #W = tf.Variable(tf.random_normal([5, 5, 1, 32]))
     #with tf.Session() as sess:
     #    sess.run(tf.global_variables_initializer())
     #    W_val = sess.run(W)
